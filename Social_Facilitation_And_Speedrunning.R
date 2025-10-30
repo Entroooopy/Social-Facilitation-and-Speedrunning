@@ -280,8 +280,7 @@ new_plot_colour <- function(df, bind_x, bind_y, colour) {
 
 
 #create a function that combines assumption checks, regression model, and output
-LM <- function(dv, iv, iv2 = NA, df) { #make a function
-  #assumption checks
+LM <- function(dv, iv, iv2 = NA, df) { 
   if(is.na(iv2)) {
     plot <- new_plot(df, dv, iv)
     model <- lm(as.formula(paste(dv, "~", iv)), data = df)
