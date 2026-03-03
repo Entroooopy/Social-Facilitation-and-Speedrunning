@@ -400,7 +400,7 @@ tout("choppy_orc", 693, 20)
 if (is.na(df2[1,1])) {
   df2<- df2[2:nrow(df2),1:8]
 } else {
-  print("Error! You're trying to remove real data!")
+  stop("Error! You're trying to remove real data!")
 }
 
 #to see how many games / game categories
